@@ -1,0 +1,139 @@
+:root {
+    --btn-color: #47a386;
+    --btn-txt-color: #fff;
+    --bg-modal: rgba(0, 0, 0, .35);
+    --modal-txt-color: rgb(12, 12, 12);
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6rem;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin: 3em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: var(--btn-color);
+}
+
+img {
+    max-width: 100%;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    border-radius: 4px;
+    margin-bottom: .5em;
+}
+
+
+/* Typography */
+
+.team__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.modal__title{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--modal-txt-color);
+
+}
+
+.modal__text {
+    margin: 0;
+    font-weight: 400;
+    color: var(--modal-txt-color);
+}
+
+.modal__title,
+.modal__text {
+
+    margin-bottom: 1.5rem;
+
+}
+
+/* Buttons */
+
+.openBtn1,
+.openBtn2,
+.openBtn3,
+.closeBtn1, 
+.closeBtn2,
+.closeBtn3 {
+    border: none;
+    background: var(--btn-color);
+    padding: .8em 1em;
+    color: var(--btn-txt-color);
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+/* Containers */
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.team {
+    display: inline-block;
+    margin: 3em;
+}
+
+.container-team1,
+.container-team2,
+.container-team3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bg-modal);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: all 200ms ease-in-out;
+}
+
+.modal {
+    background: var(--btn-txt-color);
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    padding: 2.5em ;
+    width: 500px;
+}
+
+
+
+/* Dynamic Class */
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+}

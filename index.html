@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Practice: Project #1 Multi Modals</title>
+    <link rel="stylesheet" href="/css/1-modal.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Australia Rugby Teams</h1>
+    </header>
+    <main>
+      <section class="teams">
+        <div class="team">
+          <img src="/images/wests-tigers-badge.svg" alt="West Tigers logo" />
+          <h2 class="team__title">Tigers</h2>
+          <button class="openBtn1">Find out more</button>
+        </div>
+        <div class="team">
+          <img src="/images/raiders-badge.svg" alt="Raiders logo" />
+          <h2 class="team__title">Raiders</h2>
+          <button class="openBtn2">Find out more</button>
+        </div>
+        <div class="team">
+          <img src="/images/Brisbane-Broncos-badge.svg" alt="Broncos logo" />
+          <h2 class="team__title">Broncos</h2>
+          <button class="openBtn3">Find out more</button>
+        </div>
+      </section>
+      <!-- Modal container -->
+      <section class="container-team1">
+        <div class="modal">
+          <h1 class="modal__title">Tigers</h1>
+          <p class="modal__text">
+            The Wests Tigers are an Australian professional rugby league
+            football team, based in the Inner West and Western Sydney. They are
+            currently coached by Brett Kimmorley. The club CEO is Justin Pascoe.
+          </p>
+          <button class="closeBtn1">Close</button>
+        </div>
+      </section>
+      <section class="container-team2">
+        <div class="modal">
+          <h1 class="modal__title">Raiders</h1>
+          <p class="modal__text">
+            The Canberra Raiders are an Australian professional rugby league
+            football club based in the national capital city of Canberra,
+            Australian Capital Territory. They are currently coached by Ricky
+            Stuart. The club CEO is Don Furner Jr.
+          </p>
+          <button class="closeBtn2">Close</button>
+        </div>
+      </section>
+      <section class="container-team3">
+        <div class="modal">
+          <h1 class="modal__title">Broncos</h1>
+          <p class="modal__text">
+            The Brisbane Broncos Rugby League Football Club Ltd., commonly
+            referred to as the Broncos, are an Australian professional rugby
+            league football club based in the city of Brisbane, the capital of
+            the state of Queensland. They are currently coached by Kevin
+            Walters. The club CEO is Dave Donaghyr.
+          </p>
+          <button class="closeBtn3">Close</button>
+        </div>
+      </section>
+    </main>
+    <script src="/js/1-modal.js"></script>
+  </body>
+</html>
